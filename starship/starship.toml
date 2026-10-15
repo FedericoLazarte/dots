@@ -1,0 +1,152 @@
+format = """\
+($directory)\
+$git_branch\
+$fill\
+$nodejs\
+$rust\
+$golang\
+$php\
+$bun\
+$java\
+$c\
+$conda\
+$zig\
+$cmd_duration\
+$time\
+\n$character\
+"""
+
+scan_timeout = 80
+
+add_newline = true
+command_timeout = 3600000
+palette = "kanagawa_dragon"
+
+[fill]
+symbol = ' '
+
+[palettes.kanagawa_dragon]
+text = "#c5c9c5"
+red = "#c4746e"
+green = "#8a9a7b"
+yellow = "#c4b28a"
+blue = "#8ba4b0"
+mauve = "#a292a3"
+pink = "#a292a3"
+teal = "#8ea4a2"
+peach = "#b6927b"
+subtext0 = "#625e5a"
+overlay0 = "#393836"
+rosewater = "#c4b28a"
+flamingo = "#a292a3"
+maroon = "#c4746e"
+lavender = "#a292a3"
+subtext1 = "#727169"
+overlay2 = "#625e5a"
+overlay1 = "#1f1f1f"
+surface2 = "#282727"
+surface1 = "#1f1f1f"
+surface0 = "#181616"
+base = "none"
+mantle = "#181616"
+crust = "#0d0c0c"
+sky = "#8ba4b0"
+
+[character]
+success_symbol = "[❯ ](fg:lavender)"
+error_symbol = "[❯ ](fg:red)"
+vimcmd_symbol = "[N](bold red)"
+vimcmd_replace_one_symbol = "[R](bold peach)"
+vimcmd_visual_symbol = "[V](bold mauve)"
+
+[username]
+style_user = 'bold blue'
+style_root = 'bold rosewater'
+format = '[❯ $user](fg:$style) '
+disabled = false
+show_always = true
+
+[directory]
+format = "[$path](bold $style)[$read_only]($read_only_style) "
+truncation_length = 2
+style = "fg:pink"
+read_only_style = "fg:pink"
+before_repo_root_style = "fg:pink"
+truncation_symbol = "…/"
+truncate_to_repo = true
+read_only = "  "
+
+[directory.substitutions]
+"Documents" = " 🖹 "
+"Downloads" = " 🖫 "
+"Music" = " 🎧 "
+"Pictures" = " 📷 "
+
+[cmd_duration]
+format = " took [ $duration]($style) "
+style = "bold fg:peach"
+min_time = 500
+
+[os]
+disabled = true
+
+[git_branch]
+format = "🢡  [$symbol$branch]($style) "
+style = "bold fg:rosewater"
+symbol = "󰊤  "
+
+[git_status]
+disabled = true
+
+[python]
+disabled = false
+format = "[$symbol$pyenv_prefix($version)( $virtualenv)](fg:sky)"
+symbol = "󰌠 "
+version_format = "$raw"
+
+[java]
+format = '[[ $symbol ($version) ](fg:peach)]($style)'
+version_format = "$raw"
+symbol = "󰬷 "
+disabled = false
+
+[c]
+format = '[[ $symbol ($version) ](fg:green)]($style)'
+symbol = "󰙱 "
+version_format = "$raw"
+disabled = false
+
+[zig]
+format = '[[ $symbol ($version) ](fg:yellow)]($style)'
+version_format = "$raw"
+symbol = " "
+disabled = false
+
+[bun]
+version_format = "$raw"
+format = '[[ $symbol ($version) ](fg:mauve)]($style)'
+symbol = "󰞋 "
+disabled = false
+
+[nodejs]
+symbol = "󰎙 "
+format = '[[ $symbol ($version) ](fg:teal)]($style)'
+
+[rust]
+symbol = "󱘗 "
+format = '[[ $symbol ($version) ](fg:blue)]($style)'
+
+[golang]
+symbol = "󰟓 "
+format = '[[ $symbol ($version) ](fg:yellow)]($style)'
+
+[php]
+symbol = "󰏟 "
+format = '[[ $symbol ($version) ](fg:maroon)]($style)'
+
+[conda]
+symbol = "󰏔 "
+format = "via [$symbol$environment]($style) "
+style = "red bold"
+disabled = false
+

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/frieren.txt",
+    "color": {
+      "1": "#e29eca",
+      "2": "#e29eca",
+      "3": "#e29eca",
+      "4": "#e29eca",
+      "5": "#e29eca",
+      "6": "#e29eca",
+      "7": "#e29eca",
+      "8": "#e29eca",
+      "9": "#e29eca"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "color": "#9ca2cf",
+      "keyColor": "#9ca2cf"
+    },
+    "separator",
+    {
+      "type": "os",
+      "color": "#00f5ff",
+      "keyColor": "#9ca2cf"
+    },
+    {
+      "type": "host",
+      "color": "#0055ff",
+      "keyColor": "#85b5ba"
+    },
+    {
+      "type": "kernel",
+      "color": "#00ddff",
+      "keyColor": "#90b99f"
+    },
+    {
+      "type": "uptime",
+      "color": "#00bbff",
+      "keyColor": "#e29eca"
+    },
+    {
+      "type": "packages",
+      "color": "#88ffdd",
+      "keyColor": "#ea83a5"
+    },
+    {
+      "type": "shell",
+      "color": "#cc88ff",
+      "keyColor": "#c9c7cd"
+    },
+    {
+      "type": "de",
+      "color": "#dd88ff",
+      "keyColor": "#e6b99d"
+    },
+    {
+      "type": "wm",
+      "color": "#ff88ff",
+      "keyColor": "#acb1d7"
+    },
+    {
+      "type": "wmtheme",
+      "color": "#ff66ff",
+      "keyColor": "#97c0c4"
+    },
+    {
+      "type": "theme",
+      "color": "#ff4488",
+      "keyColor": "#a7c8b3"
+    },
+    {
+      "type": "icons",
+      "color": "#ff44cc",
+      "keyColor": "#e8b0d4"
+    },
+    {
+      "type": "font",
+      "color": "#cc44ff",
+      "keyColor": "#ed96b3"
+    },
+    {
+      "type": "cursor",
+      "color": "#ff44ff",
+      "keyColor": "#dd22ff"
+    },
+    {
+      "type": "terminal",
+      "color": "#66ff88",
+      "keyColor": "#c9c7cd"
+    },
+    {
+      "type": "terminalfont",
+      "color": "#44ff66",
+      "keyColor": "#eac5ae"
+    },
+    {
+      "type": "memory",
+      "color": "#44ffcc",
+      "keyColor": "#c9c7cd"
+    },
+    {
+      "type": "disk",
+      "color": "#00ffaa",
+      "keyColor": "#90b99f"
+    }
+  ]
+}

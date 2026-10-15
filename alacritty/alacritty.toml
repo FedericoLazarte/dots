@@ -1,0 +1,92 @@
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║                         GENTLEMAN DOTS - ALACRITTY                           ║
+# ║                          Optimized for Neovim                                ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                   FONT                                       │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[font]
+size = 8
+
+[font.normal]
+family = "IosevkaTerm Nerd Font"
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                  WINDOW                                      │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[window]
+opacity = 0.80
+blur = true
+option_as_alt = "Both"
+startup_mode = "Maximized"
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                  CURSOR                                      │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[cursor]
+style = "Block"
+blink_interval = 500
+unfocused_hollow = true
+vi_mode_style = "Block"
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                                 TERMINAL                                     │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+[terminal]
+# For best Neovim compatibility, install alacritty terminfo:
+# sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
+
+[env]
+TERM = "xterm-256color"
+
+[hints]
+enabled = []
+
+
+# ┌──────────────────────────────────────────────────────────────────────────────┐
+# │                           GENTLEMAN THEME                                    │
+# └──────────────────────────────────────────────────────────────────────────────┘
+
+# --- Base Colors ---
+[colors.primary]
+background = '#161617'
+foreground = '#c9c7cd'
+
+[colors.cursor]
+cursor = "#e0c15a"
+text = "#06080f"
+
+[colors.selection]
+background = "#263356"
+text = "#f3f6f9"
+
+# Normal colors
+[colors.normal]
+black = '#27272a'
+blue = '#9ca2cf'
+cyan = '#85b5ba'
+green = '#90b99f'
+magenta = '#e29eca'
+red = '#ea83a5'
+white = '#c9c7cd'
+yellow = '#e6b99d'
+
+# Bright colors
+[colors.bright]
+black = '#353539'
+blue = '#acb1d7'
+cyan = '#97c0c4'
+green = '#a7c8b3'
+magenta = '#e8b0d4'
+red = '#ed96b3'
+white = '#c9c7cd'
+yellow = '#eac5ae'
